@@ -1,0 +1,7 @@
+
+1. install ctags
+sudo apt install exuberant-ctags
+
+
+2. install expect
+sudo apt install expect
