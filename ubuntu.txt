@@ -5,3 +5,10 @@ sudo apt install exuberant-ctags
 
 2. install expect
 sudo apt install expect
+
+
+3. python version config
+update-alternatives --install /usr/bin/python python /usr/bin/python2.7 60
+update-alternatives --install /usr/bin/python python /usr/bin/python3.6 70
+update-alternatives --install /usr/bin/python python /usr/bin/python3.8 80
+update-alternatives --config python

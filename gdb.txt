@@ -1,0 +1,17 @@
+
+ambarella target debug
+
+gdbserver:
+1. gdbserver – Run this on your target system
+2. GDB – Execute this on your host system to connect to your target system
+
+1. run on target
+gdbserver --multi localhost:2345
+
+2. run on host
+/usr/local/linaro-aarch64-2018.08-gcc8.2/bin/aarch64-linux-gnu-gdb
+target extended-remote 192.168.10.192:2345
+set remote exec-file main
+file main
+run
+
