@@ -1,0 +1,16 @@
+
+Host 192.168.50.50
+    HostName 192.168.50.50
+    Port 10022
+    User git
+    IdentityFile /home/xiao/.ssh/gitlab/id_rsa
+
+Host git
+    HostName 192.168.50.245
+    User git
+    IdentityFile /home/xiao/.ssh/vehcile/id_rsa
+
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile /home/xiao/.ssh/github/id_rsa
