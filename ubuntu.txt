@@ -12,3 +12,17 @@ update-alternatives --install /usr/bin/python python /usr/bin/python2.7 60
 update-alternatives --install /usr/bin/python python /usr/bin/python3.6 70
 update-alternatives --install /usr/bin/python python /usr/bin/python3.8 80
 update-alternatives --config python
+
+4.install samba
+sudo apt install samba samba-common
+
+vim /etc/samba/smb.conf, and add below
+[share]
+     comment = xz share dir
+     path = /home/xiao/samb/
+     public = yes
+     writable = yes
+
+service smbd restart
+
+
