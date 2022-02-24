@@ -10,8 +10,19 @@ gdbserver --multi localhost:2345
 
 2. run on host
 /usr/local/linaro-aarch64-2018.08-gcc8.2/bin/aarch64-linux-gnu-gdb
+
+#链接目标板
 target extended-remote 192.168.10.192:2345
-set remote exec-file main
-file main
+
+#设置board上的可执行文件路径
+set remote exec-file /app/genius-app
+
+#设置可执行文件的参数
+set args -t1 here
+
+#load 符号表，该文件在host当前的目录
+file genius-app
+
+#运行
 run
 
