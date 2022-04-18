@@ -1,0 +1,6 @@
+
+1. vbox 支持usb
+    . 安装virtualbox拓展包。
+    . 将用户添加到vboxuser组。
+    . 重启电脑。
+    . 启动虚拟机，选择 设备-> usb 即可。
