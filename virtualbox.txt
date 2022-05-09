@@ -4,3 +4,9 @@
     . 将用户添加到vboxuser组。
     . 重启电脑。
     . 启动虚拟机，选择 设备-> usb 即可。
+
+
+2. vbox 支持增强功能
+    . 虚拟家光驱 加载/usr/share/virtualbox/VBoxGuestAdditions.iso
+    . 重启安装
+
