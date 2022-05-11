@@ -1,0 +1,5 @@
+
+AT+CPIN?
+AT+CFUN?
+AT+CEREG?
+AT+QENG="servingcell"查询看下
