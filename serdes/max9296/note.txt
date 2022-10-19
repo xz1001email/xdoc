@@ -1,0 +1,40 @@
+
+max9295-max9296
+pipeline flow
+
+pixel mode
+
+tunnel mode
+
+
+max9295:
+    是否检测到sensor的mipi,0x0112查看PCLK detected
+
+    1. 0x0002 pipe enable
+    2. 0x0308 csi port for pipeline
+    3. 0x0311 pipeline start video
+    4. 0x0314-0x31b pipline route
+
+
+
+
+
+max9296:
+
+    PHY0 PHY1 PHY2 PHY3 单个支持2lane
+    PHY0合并到到PHY1后，PHY1支持4lane
+    PHY3合并到到PHY2后，PHY2支持4lane
+
+    PHY0 PHY1默认是mipiA
+    PHY2 PHY3默认是mipiB
+
+    A口默认到mipiA
+    B口默认到mipiB
+    XYZU默认ID是0123
+    数据到A口的话，9296的0x51=0x02, 0x52=0x01
+
+    pipeline lock 0x0108 0x011A 0x012C 0x013E
+
+    1. 0x0332 phy standby
+
+
