@@ -25,4 +25,12 @@ vim /etc/samba/smb.conf, and add below
 
 service smbd restart
 
+5. show image cmd: eog
+
+6. 截图命令： flameshot 设置快捷键命令 flameshot gui
+
+7. BT下载软件 qbittorrent
+
+8. 计算器 gnome-calculator
+
 

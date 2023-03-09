@@ -1,0 +1,18 @@
+
+ubuntu 20.04 自带python3.8版本，pip3也是对应3.8版本。
+
+
+现在要使用python3.6版本，对应pip也要是3.6版本才行。
+python的版本可以通过update-alternatives来管理
+
+pip的版本要重装
+
+
+如何下在各个版本的pip？
+
+  1.获取脚本
+  curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+  2.安装pip3.6
+  python3.6 get-pip.py
+  3. pip3.6 install package
+
