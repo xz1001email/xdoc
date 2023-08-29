@@ -1,0 +1,2 @@
+
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="05c6", ATTRS{idProduct}=="9091", GROUP="users", MODE="0666"
