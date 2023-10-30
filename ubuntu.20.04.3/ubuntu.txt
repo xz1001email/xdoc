@@ -33,4 +33,14 @@ service smbd restart
 
 8. 计算器 gnome-calculator
 
+9. ibus输入法
+   1.安装中文语言包是为了让Input Sources里面出现Chinese这一项。
+   2.language 不要设置成chinese，会导致系统菜单变成中文
+   3.1 安装ibus框架 sudo apt-get install ibus ibus-clutter ibus-gtk ibus-gtk3 ibus-qt4
+   3.2 切换到ibus框架 im-config -s ibus
+   3.3 安装拼音引擎 sudo apt-get install ibus-pinyin
+   4. ubuntu20.04 执行3.3即可， shift切换
+
+
+
 

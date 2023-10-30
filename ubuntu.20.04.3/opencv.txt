@@ -1,0 +1,17 @@
+
+测试opencv源码为3.4.16版本
+
+sample有些python的测试例子
+
+在运行calibration.py的时候出现错误
+cv2.error: OpenCV(4.6.0) /io/opencv/modules/highgui/src/window.cpp:1261: error: (-2:Unspecified error) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Cocoa support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function 'cvDestroyAllWindows'
+
+网上查询的反映是opencv还有一个第三方包要安装
+这个包是opencv-contrib-python
+opencv-contrib包，因为版权和稳定性问题，没有加入到opencv，需要对应opencv的版本单独编译
+
+当前测试例子的源码版本是3.4.16，所以安装对应版本
+pip install opencv-python==3.4.16.59 -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install opencv-contrib-python==3.4.16.59 -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+安装完成后，再运行calibration.py没有报错

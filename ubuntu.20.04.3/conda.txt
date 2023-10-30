@@ -1,0 +1,51 @@
+
+conda 是一个通用环境管理工具
+
+1. 从官网下载安装
+
+2. 初始化和激活环境变量
+    source ~/anaconda3/bin/activate
+3. 常用指令
+    查看信息
+    conda info
+
+    查看环境
+    conda info --env
+
+    切换环境
+    conda activate plot
+
+    安装包
+    conda install xxx
+
+
+4. dist-package和site-package
+    dist-package 一般为系统安装路径，例如apt安装的一般在dist-package
+    site-package 一般是手动安装的，第三方库
+
+5. conda 安装的都在~/anaconda3/envs中
+   pip 的安装在在对应的python版本中
+   例如当前plot环境中的python是3.6版本
+   pip安装路径是~/anaconda3/envs/plot/lib/python3.6/site-packages/opencv_python
+   可见conda完全构造了一个独立的环境(python独立和其他的软件包独立)
+
+6. 虚拟环境比较
+   Conda和pip+virtualenv都可以创建虚拟环境
+   Conda: 完全独立的python版本和其他软件包的版本
+          不同环境中所有的文件都是独立的，确定是占用空间大
+
+   pip+virtualenv: 基于特定的python版本，管理其他包的软件版本。
+                   基于软链接实现，virtualenv本身基于python,
+                   所以不能管理python，只能管理其他的软件包，
+                   优点是占用空间小
+
+7. 查看可下载的软件版本
+    conda: conda search opencv
+    pip: pip index versions opencv-python
+
+
+
+
+
+
+
