@@ -1,6 +1,25 @@
 
-ambarella target debug
+官方文档地址
+https://sourceware.org/gdb/current/onlinedocs/gdb#Command-Files
 
+常规本地调试
+gdb file 预加载程序, 程序没有启动
+
+gdb file -t1 可以直接加参数
+
+gdb file corefile 有corefile时，可以直接看bt
+
+gdb 执行运行gdb，可以在内部加载文件
+file exefile 加载程序
+start 停止在程序的entry，通常是main
+list 查看src文件
+
+source cmdfile 可以把经常用的命令放到cmdfile中，source来执行
+
+
+
+
+可重复链接运行的方式使用 --multi
 gdbserver:
 1. gdbserver – Run this on your target system
 2. GDB – Execute this on your host system to connect to your target system
@@ -25,4 +44,19 @@ file genius-app
 
 #运行
 run
+
+
+
+other:
+如果程序依赖于运行目录，可以cd到执行目录运行gdbserver
+
+带程序运行
+gdbserver :1234 app -t1
+
+gdb 也可以带参数,直接导入符号
+/usr/local/linaro-aarch64-2018.08-gcc8.2/bin/aarch64-linux-gnu-gdb app
+
+
+
+
 

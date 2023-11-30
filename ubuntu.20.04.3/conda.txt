@@ -43,6 +43,17 @@ conda 是一个通用环境管理工具
     conda: conda search opencv
     pip: pip index versions opencv-python
 
+8. 再谈pip和conda
+    有时候conda无法在源中找到想要的包，可以使用pip安装
+    但是pip安装的包不是conda环境中独享的，外部的python环境也共享pip安装的包
+    例如 ubuntu20.04自带的python为3.8.10版本，使用conda也创建了一个python3.8.10的环境
+    在conda中python3.8.10中下载了
+    opencv-contrib-python     3.4.16.59
+    opencv-python             3.4.16.59
+
+    但是外部环境的python3.8.10中已经下载过opencv-python-headless是4.6.0.66版本，这就导致了版本冲突
+    opencv-python-headless    4.6.0.66
+
 
 
 
