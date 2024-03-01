@@ -57,6 +57,19 @@ gdb 也可以带参数,直接导入符号
 /usr/local/linaro-aarch64-2018.08-gcc8.2/bin/aarch64-linux-gnu-gdb app
 
 
+1.多线程, 断点时，设置其他线程不停止
+set target-async 1
+set pagination off
+set non-stop on
 
+2.保存当前断点到文件
+save breakpoints 1.cfg
+
+导入断点文件
+source 1.cfg
+
+3.调试动态库，如何查看源码
+1. list显示文件找不到，可以将库代码拷贝一份到调试的路径
+2. 或者使用dir命令增加代码路径 dir path
 
 
