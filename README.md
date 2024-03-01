@@ -1,2 +1,2 @@
-# git-config
-git note
+# usefull doc
+
