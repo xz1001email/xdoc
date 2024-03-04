@@ -1,3 +1,4 @@
+test on ubuntu.20.04.3
 
 1. install ctags
 sudo apt install exuberant-ctags
