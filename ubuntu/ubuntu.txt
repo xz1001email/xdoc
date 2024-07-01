@@ -43,5 +43,12 @@ service smbd restart
    4. ubuntu20.04 执行3.3即可， shift切换
 
 
+10.source.list
+# tsinghua source
+# https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/
+# choose ubuntu 22.04 LTS jammy
+# vim /etc/apt/source.list.tsinghua
+# cp /etc/apt/source.list /etc/apt/source.list.bak
+# ln -s /etc/apt/source.list.tsinghua /etc/apt/source.list
 
 

@@ -110,6 +110,15 @@ git submodule update
 #submodule的repo和正常的repo一样，单独自己维护, 该repo也并不清楚自己是别人的子模块
 #主模块只管理子模块的commit，从而锁定总版本的commit
 
+#拉取单个submodule的更新
+cd sub-dir
+git pull origin branch-name
+
+
+#拉取所有submodule的更新
+git submodule foreach 'git pull origin master'
+
+
 ```
 
 
