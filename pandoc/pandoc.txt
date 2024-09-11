@@ -1,0 +1,71 @@
+
+1. 查看系统下的中文字体
+ fc-list :lang=zh
+
+2. 可以使用 fc-match 命令来查看系统中某个特定语言（如中文）的默认字体，看看是否为 Noto CJK 字体。
+ fc-match -s :lang=zh
+
+3. Noto CJK 字体包是什么
+    Noto CJK 字体包是 Google 和 Adobe 联合开发的一个开源字体系列，专门为中文、日文、韩文（CJK：Chinese, Japanese, Korean）字符提供支持。
+    它属于 Google 的 Noto 字体家族，"Noto" 代表 “No Tofu”，其中 "Tofu" 是指在显示不支持的字符时出现的空白框（□）。
+    Noto 字体的目标是消除这种情况，确保任何语言的字符都能被正确显示。
+    Noto CJK 的特点：
+    广泛的字符覆盖：
+
+    支持简体中文、繁体中文、日文、韩文字符集，涵盖 Unicode 标准中的 CJK 字符。
+    多种字体样式：
+
+    提供多种样式（如 Regular、Bold 等），适合不同的显示和印刷需求。
+    跨平台兼容性：
+
+    可在各种操作系统（如 Linux、Windows、macOS）上使用，同时也支持网页字体。
+    优化显示效果：
+
+    针对不同的语言特性做了优化，保证中文、日文、韩文字符在各自的语言环境下呈现出最佳效果。
+    安装 Noto CJK 字体的好处：
+    更好的跨语言显示：当系统中包含多个语言时（例如中文和日文），Noto CJK 能够保证不同语言的字体风格一致性。
+    高质量字体：Noto CJK 字体具有清晰的显示效果，特别适合高分辨率显示器和印刷用途。
+    广泛应用：它被广泛应用于各种平台和应用程序，如 Android 操作系统中默认的中文字体。
+    通过安装 fonts-noto-cjk，可以确保系统在处理中日韩文本时，拥有全面的字符集支持和优质的显示效果。
+
+4. fc-list :lang=zh | grep "Noto Sans CJK"
+    /usr/share/fonts/opentype/noto/NotoSansCJK-Black.ttc: Noto Sans CJK HK,Noto Sans CJK HK Black:style=Black,Regular
+    /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc: Noto Sans CJK JP:style=Regular
+    /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc: Noto Sans CJK HK:style=Regular
+    /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc: Noto Sans CJK KR:style=Regular
+    /usr/share/fonts/opentype/noto/NotoSansCJK-Black.ttc: Noto Sans CJK TC,Noto Sans CJK TC Black:style=Black,Regular
+    /usr/share/fonts/opentype/noto/NotoSansCJK-Black.ttc: Noto Sans CJK KR,Noto Sans CJK KR Black:style=Black,Regular
+    /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc: Noto Sans CJK SC:style=Regular
+    /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc: Noto Sans CJK TC:style=Regular
+    /usr/share/fonts/opentype/noto/NotoSansCJK-Medium.ttc: Noto Sans CJK JP,Noto Sans CJK JP Medium:style=Medium,Regular
+    /usr/share/fonts/opentype/noto/NotoSansCJK-Light.ttc: Noto Sans CJK KR,Noto Sans CJK KR Light:style=Light,Regular
+    /usr/share/fonts/opentype/noto/NotoSansCJK-Light.ttc: Noto Sans CJK HK,Noto Sans CJK HK Light:style=Light,Regular
+    /usr/share/fonts/opentype/noto/NotoSansCJK-Black.ttc: Noto Sans CJK SC,Noto Sans CJK SC Black:style=Black,Regular
+    /usr/share/fonts/opentype/noto/NotoSansCJK-Light.ttc: Noto Sans CJK SC,Noto Sans CJK SC Light:style=Light,Regular
+    /usr/share/fonts/opentype/noto/NotoSansCJK-Medium.ttc: Noto Sans CJK KR,Noto Sans CJK KR Medium:style=Medium,Regular
+    /usr/share/fonts/opentype/noto/NotoSansCJK-DemiLight.ttc: Noto Sans CJK JP,Noto Sans CJK JP DemiLight:style=DemiLight,Regular
+    /usr/share/fonts/opentype/noto/NotoSansCJK-Thin.ttc: Noto Sans CJK JP,Noto Sans CJK JP Thin:style=Thin,Regular
+    /usr/share/fonts/opentype/noto/NotoSansCJK-Light.ttc: Noto Sans CJK JP,Noto Sans CJK JP Light:style=Light,Regular
+    /usr/share/fonts/opentype/noto/NotoSansCJK-Thin.ttc: Noto Sans CJK KR,Noto Sans CJK KR Thin:style=Thin,Regular
+    /usr/share/fonts/opentype/noto/NotoSansCJK-Thin.ttc: Noto Sans CJK HK,Noto Sans CJK HK Thin:style=Thin,Regular
+    /usr/share/fonts/opentype/noto/NotoSansCJK-Thin.ttc: Noto Sans CJK SC,Noto Sans CJK SC Thin:style=Thin,Regular
+    /usr/share/fonts/opentype/noto/NotoSansCJK-DemiLight.ttc: Noto Sans CJK TC,Noto Sans CJK TC DemiLight:style=DemiLight,Regular
+    /usr/share/fonts/opentype/noto/NotoSansCJK-DemiLight.ttc: Noto Sans CJK SC,Noto Sans CJK SC DemiLight:style=DemiLight,Regular
+    /usr/share/fonts/opentype/noto/NotoSansCJK-Medium.ttc: Noto Sans CJK TC,Noto Sans CJK TC Medium:style=Medium,Regular
+    /usr/share/fonts/opentype/noto/NotoSansCJK-Black.ttc: Noto Sans CJK JP,Noto Sans CJK JP Black:style=Black,Regular
+    /usr/share/fonts/opentype/noto/NotoSansCJK-Medium.ttc: Noto Sans CJK SC,Noto Sans CJK SC Medium:style=Medium,Regular
+    /usr/share/fonts/opentype/noto/NotoSansCJK-DemiLight.ttc: Noto Sans CJK KR,Noto Sans CJK KR DemiLight:style=DemiLight,Regular
+    /usr/share/fonts/opentype/noto/NotoSansCJK-Medium.ttc: Noto Sans CJK HK,Noto Sans CJK HK Medium:style=Medium,Regular
+    /usr/share/fonts/opentype/noto/NotoSansCJK-Thin.ttc: Noto Sans CJK TC,Noto Sans CJK TC Thin:style=Thin,Regular
+    /usr/share/fonts/opentype/noto/NotoSansCJK-DemiLight.ttc: Noto Sans CJK HK,Noto Sans CJK HK DemiLight:style=DemiLight,Regular
+    /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc: Noto Sans CJK JP:style=Bold
+    /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc: Noto Sans CJK KR:style=Bold
+    /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc: Noto Sans CJK HK:style=Bold
+    /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc: Noto Sans CJK TC:style=Bold
+    /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc: Noto Sans CJK SC:style=Bold
+    /usr/share/fonts/opentype/noto/NotoSansCJK-Light.ttc: Noto Sans CJK TC,Noto Sans CJK TC Light:style=Light,Regular
+
+5. markdown转pdf, 默认引擎是latex，xelatex更好的支持unicode--utf-8编码
+    --toc 是生成目录
+ pandoc test.md -o output.pdf --toc --pdf-engine=xelatex -V mainfont="Noto Sans CJK JP"
+

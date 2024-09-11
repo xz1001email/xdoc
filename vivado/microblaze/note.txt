@@ -1,0 +1,12 @@
+
+1. 使用 AXI Interrupt Controller, 不要有未使用的中断pin，会导致编译失败
+2. 使用多个中断，使用concat IP
+3. clock wizard的locked是时钟稳定信号，从低到高。可以作为复位信号。如果有IP的是低复位可以使用这个信号
+
+
+
+4. 在桌面运行vivado，修改编译，可能报权限问题。
+   从terminal运行则没有问题
+~/xilinx/Vivado/2018.3$ source settings64.sh
+~/xilinx/Vivado/2018.3$ vivado
+
