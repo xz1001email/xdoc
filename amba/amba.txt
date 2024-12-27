@@ -1,0 +1,16 @@
+
+测试vin
+test_encode -i 0 -J --btype off --vsync-detect-dis 1
+test_encode -i 0 -J --btype off --vsync-detect-dis 1 --raw-capture 1
+
+测试vin
+通过--vsrc选择第几路，不是vin0/vin1/vin2
+应用层应该没有vin0/vin1/vin2的概念，通过--vsrc选择指定的路径
+test_encode -i 0 --vsrc 1 -J --btype off --vsync-detect-dis 1 --raw-capture 1
+
+
+vin0:
+amba_debug -w 0xed1c8000 -d 0x1000&&amba_debug -r 0xed1c0000 -s 0x120
+
+vin1:
+amba_debug -w 0xed1c8000 -d 0xa000&&amba_debug -r 0xed1c0000 -s 0x120
