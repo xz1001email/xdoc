@@ -123,4 +123,14 @@ git submodule foreach 'git pull origin master'
 
 
 
+### git设置代理
+
+```
+git config --global https.proxy https://你的VPN用户名:你的vpn密码@xxx.xxx.com:443
+```
+
+### git调试
+```
+GIT_CURL_VERBOSE=1 GIT_TRACE=1 git pull origin 4.x
+```
 

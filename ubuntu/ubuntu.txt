@@ -42,6 +42,9 @@ service smbd restart
    3.3 安装拼音引擎 sudo apt-get install ibus-pinyin
    4. ubuntu20.04 执行3.3即可， shift切换
 
+apt 代理下载
+    vim /etc/apt/apt.conf.d/proxy.conf
+    Acquire::https::Proxy "https://你的VPN用户名:你的vpn密码@xxx.xxx.com:443/
 
 10.source.list
 # tsinghua source
